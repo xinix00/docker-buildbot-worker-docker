@@ -30,4 +30,4 @@ RUN apk add --no-cache docker \
 WORKDIR /buildbot
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["sh", "-c", "docker & twistd -ny buildbot.tac"]
+CMD ["sh", "-c", "dockerd & twistd -ny buildbot.tac"]
