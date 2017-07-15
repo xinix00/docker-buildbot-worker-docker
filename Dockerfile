@@ -1,6 +1,8 @@
 FROM        xinix00/buildbot-worker:0.9.9.post2
 MAINTAINER  XiniX00
 
+ENV PATH=/opt/google-cloud-sdk/bin:$PATH
+
 WORKDIR /opt/
 RUN apk add --no-cache docker \
     openrc \
