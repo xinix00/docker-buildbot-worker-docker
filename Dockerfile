@@ -1,4 +1,4 @@
-FROM        xinix00/buildbot-worker:0.9.9.post2
+FROM        xinix00/buildbot-worker:0.9.10
 MAINTAINER  XiniX00
 
 ENV PATH=/opt/google-cloud-sdk/bin:$PATH
