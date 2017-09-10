@@ -26,7 +26,6 @@ RUN apk add --no-cache docker \
     google-cloud-sdk/bin/gcloud config set --installation component_manager/disable_update_check true && \
     sed -i -- 's/\"disable_updater\": false/\"disable_updater\": true/g' google-cloud-sdk/lib/googlecloudsdk/core/config.json
     
-
 WORKDIR /buildbot
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
